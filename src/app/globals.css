@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* SHARED */
+    .theme-nav {
+        @apply bg-sky-800 text-white 
+    }
+
+    .theme-bg-gradient {
+        /*background: radial-gradient(#E7E5E4, #D6D3D1);*/
+        @apply bg-slate-200;
+    }
+
+    .theme-bg-link {
+        @apply text-white bg-sky-800 hover:bg-sky-700 transition-colors duration-200;
+    }
+
+    .theme-fg-link {
+        @apply text-sky-700 hover:text-sky-700 transition-colors duration-200;
+    }
+
+    /* LIGHT */
+    .theme-l-fg-1 {
+        @apply text-black
+    }
+
+    .theme-l-fg-2 {
+        @apply text-slate-700
+    }
+
+    .theme-l-bg-1 {
+        @apply bg-stone-50
+    }
+
+    .theme-l-bg-2 {
+        @apply bg-white
+    }
+
+    .theme-l-border {
+        @apply border-sky-600
+    }
+
+    /* DARK */
+    .theme-d-fg-1 {
+        @apply text-white
+    }
+
+    .theme-d-fg-2 {
+        @apply text-slate-300
+    }
+
+    .theme-d-bg-1 {
+        @apply bg-sky-700
+    }
+
+    .theme-d-bg-2 {
+        @apply bg-sky-700
+    }
+
+    .theme-d-border {
+        @apply border-sky-200
+    }
+}
