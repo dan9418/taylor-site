@@ -1,66 +1,120 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+    box-sizing: border-box;
+}
 
-@layer components {
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F2B3C9;
+}
 
-    /* SHARED */
-    .theme-nav {
-        @apply bg-sky-800 text-white 
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    background-color: #FCFCFF;
+
+    width: 100%;
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: auto;
+
+    padding: 20px;
+}
+
+p {
+    margin: 20px 4px;
+}
+
+@media(min-width: 512px) {
+    p {
+        margin: 20px 48px;
     }
+}
 
-    .theme-bg-gradient {
-        /*background: radial-gradient(#E7E5E4, #D6D3D1);*/
-        @apply bg-slate-200;
-    }
+a:link {
+    color: #E86A92;
+}
 
-    .theme-bg-link {
-        @apply text-white bg-sky-800 hover:bg-sky-700 transition-colors duration-200;
-    }
+a:visited {
+    color: #F7B801;
+}
 
-    .theme-fg-link {
-        @apply text-sky-700 hover:text-sky-700 transition-colors duration-200;
-    }
+a:hover, a:active {
+    color: #F2B3C9;
+}
 
-    /* LIGHT */
-    .theme-l-fg-1 {
-        @apply text-black
-    }
+section h2 {
+    text-align: center;
+    margin: 20px auto;
+}
 
-    .theme-l-fg-2 {
-        @apply text-slate-700
-    }
+#bg {
+    width: 100%;
+    max-width: 1024px;
+    background-color: #000;
+    margin: auto;
 
-    .theme-l-bg-1 {
-        @apply bg-stone-50
-    }
+    max-height: 384px;
+    overflow: hidden;
+    vertical-align: middle;
 
-    .theme-l-bg-2 {
-        @apply bg-white
-    }
+    position: relative;
+}
 
-    .theme-l-border {
-        @apply border-sky-600
-    }
+#bg img {
+    width: 100%;
+}
 
-    /* DARK */
-    .theme-d-fg-1 {
-        @apply text-white
-    }
+#bg .text {
+    color: #FCFCFF;
+    line-height: 1;
 
-    .theme-d-fg-2 {
-        @apply text-slate-300
-    }
+    position: absolute;
+    left: 32px;
+    top: 48px;
+}
 
-    .theme-d-bg-1 {
-        @apply bg-sky-700
-    }
+#bg h1 {
+    font-size: 300%;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
 
-    .theme-d-bg-2 {
-        @apply bg-sky-700
-    }
+#bg h2 {
+    font-size: 200%;
+    margin-top: 16px;
+}
 
-    .theme-d-border {
-        @apply border-sky-200
-    }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.gig .band {
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.gig .venue {
+    color: #656565
+}
+
+hr {
+    margin-top: 32px;
 }
