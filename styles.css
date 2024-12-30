@@ -118,3 +118,7 @@ li:not(:last-child) {
 hr {
     margin-top: 32px;
 }
+
+.past {
+  text-decoration: line-through;
+}
