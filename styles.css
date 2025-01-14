@@ -112,7 +112,12 @@ li:not(:last-child) {
 }
 
 .gig .venue {
-    color: #656565
+    color: #656565;
+}
+
+.gig .note {
+    color: #656565;
+    font-style: italic;
 }
 
 hr {
